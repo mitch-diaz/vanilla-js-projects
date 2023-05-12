@@ -11,6 +11,7 @@ function calculate() {
   const currency_one = currencyEl_one.value;
   const currency_two = currencyEl_two.value;
   
+                              // Get API Key 👇
   fetch(`https://v6.exchangerate-api.com/v6/API-KEY/latest/${currency_one}`)
     .then((res) => res.json())
     .then((data) => {
